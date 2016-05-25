@@ -30,7 +30,7 @@ def main():
   stream = mmap.mmap(stream.fileno(),0)
   reader = PBTreeDictReader(
     stream,
-    value_format="<QQIQ", 
+    value_format="<QQIQI", 
     item_keys=(
       'arcSourceSegmentId',
       'arcFileDate',
